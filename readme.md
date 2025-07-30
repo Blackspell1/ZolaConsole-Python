@@ -72,7 +72,7 @@ You’ll enter a console where you can enter commands like:
 ---
 
 ## 🛠 Status
-
+This is still faulty when calcuating the burn tracer damage it gets the correct damage number but it calculates it as instant watch out for falty time when using the burn tracer this will be fixed soon
 ✅ Core logic ported  
 ✅ BurnTracer and damage DoT implemented  
 ✅ Fully interactive console  
