@@ -16,7 +16,7 @@ class Combo:
         self.hasJumpOverhead = False
         self.hasSwingOverhead = False
 
-        self.hasSeasonalBuff = True
+        self.hasSeasonalBuff = False
         self.hasMantisBuff = False
 
         self.allowFfameStack = True
