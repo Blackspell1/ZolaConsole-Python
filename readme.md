@@ -103,3 +103,4 @@ This is a faithful port of the **Zola Console** by **Evil Duck**.
 
 This project is distributed for educational and experimental use.  
 Original work by Evil Duck. Python port and enhancements by the community.
+Python version maintained by Blackspell1
