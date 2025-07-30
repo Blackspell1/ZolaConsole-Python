@@ -73,6 +73,7 @@ You’ll enter a console where you can enter commands like:
 
 ## 🛠 Status
 This is still faulty when calcuating the burn tracer damage it gets the correct damage number but it calculates it as instant watch out for falty time when using the burn tracer this will be fixed soon
+
 ✅ Core logic ported  
 ✅ BurnTracer and damage DoT implemented  
 ✅ Fully interactive console  
@@ -86,10 +87,6 @@ This is still faulty when calcuating the burn tracer damage it gets the correct 
 This is a faithful port of the **Zola Console** by **Evil Duck**.  
 **Original C++ source** and video:  
 📎 [Get the source code for the Zola Console (Google Drive)](https://drive.google.com/drive/folders/1wlQ0qxPRk73b1lVlOpOaTdNf_MmwdGTW)
-
-> "Yeah, the source code is super ugly — it's not for your admiration and I don't expect even the most competent programmer to understand why I wrote it the way that I did, it's just for compiling."
-
-> "Disclaimer: the timings aren't necessarily frame-perfect, but they're close enough to be useful."
 
 **If you're interested in cutting-edge Spiderman tech, check these out:**
 
