@@ -29,14 +29,26 @@ def parse_action_sequence(seq):
     }
     return [char_to_index[c] for c in seq if c in char_to_index]
 
+
 def handle_calc(seq, init_state):
     combo = Combo()
-    combo.__dict__.update(init_state.__dict__)
+
+    # Only copy the configuration flags (not runtime state like actions or timeTaken)
+    for attr in [
+        'hasSeasonalBuff', 'hasMantisBuff', 'allowFfameStack', 'allowSaporen',
+        'kickOpener', 'timeFromDamage', 'targetAirborne', 'isAirborne',
+        'hasDoubleJump', 'hasJumpOverhead', 'hasSwingOverhead',
+        'tracerCharges', 'swingCharges', 'getOverHereCharges',
+        'uppercutCharges', 'uppercutCooldown', 'tracerActive'
+    ]:
+        setattr(combo, attr, getattr(init_state, attr))
+
     for idx in parse_action_sequence(seq):
         legal = combo.get_legal_actions()
         if not (legal & (1 << idx)):
             print(f"warning: '{combo_action_code(idx)}' is not a legal action.")
         combo.add_action(idx)
+
     combo.print()
 
 def print_properties(state):
